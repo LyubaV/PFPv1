@@ -24,6 +24,7 @@
       <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-webmvc-3.2.1.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-webmvc-portlet-3.2.1.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/weblayer/lib/javax.servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/javax.servlet.jsp.jstl.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
