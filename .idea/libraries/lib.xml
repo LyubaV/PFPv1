@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/mysql-connector-java-5.1.22-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-aop-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-aspects-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-beans-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-build-src-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-context-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-context-support-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-core-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-expression-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-instrument-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-instrument-tomcat-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-jdbc-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-jms-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-orm-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-oxm-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-struts-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-test-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-tx-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-web-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-webmvc-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/spring-webmvc-portlet-3.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/weblayer/lib/javax.servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
