@@ -7,7 +7,7 @@
 <head>
     <title></title>
 </head>
-
+Атрибуты HTTPServletRequest:<br>
 <%
     String attr;
     for (Enumeration e = request.getAttributeNames(); e.hasMoreElements(); ) {
