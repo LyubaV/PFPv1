@@ -1,4 +1,4 @@
-package com.sitronics.learning.pfp.persist;
+package com.sitronics.learning.pfp.servicelayer;
 
 import org.springframework.stereotype.Service;
 

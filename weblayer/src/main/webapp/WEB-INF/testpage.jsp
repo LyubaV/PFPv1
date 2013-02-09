@@ -11,9 +11,9 @@
 
 
 <body>
-<form:form action="<c:url value='j_spring_security_exit_user'/>"  method="POST">
+<form action="<c:url value='/exitUser.jsp'/>"  method="POST">
     <input  name="Logout" type="submit" value="log out"/>
-</form:form>
+</form>
 
 Typical JavaBean: <br>
 <c:forEach var="val" items="${requestScope.acc.getAccounts()}">

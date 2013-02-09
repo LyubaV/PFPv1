@@ -12,13 +12,8 @@
 
     <p>Valid users:
     <p>
-    <p>username <b>rod</b>, password <b>koala</b>
-    <p>username <b>dianne</b>, password <b>emu</b>
-    <p>username <b>scott</b>, password <b>wombat</b>
-    <p>username <b>peter</b>, password <b>opal</b> (user disabled)
-    <p>username <b>bill</b>, password <b>wombat</b>
-    <p>username <b>bob</b>, password <b>wombat</b>
-    <p>username <b>jane</b>, password <b>wombat</b>
+    <p>username <b>user</b>, password <b>password</b>
+    <p>username <b>admin</b>, password <b>password</b>
     <p>
 
     <p>Locale is: <%= request.getLocale() %></p>

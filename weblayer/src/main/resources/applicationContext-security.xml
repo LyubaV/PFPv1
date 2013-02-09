@@ -9,14 +9,15 @@
     http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
 
-    <http realm="Contacts Realm">
+    <http realm="PFP Realm">
         <intercept-url pattern="/login.jsp*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
         <intercept-url pattern="/error.html" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <intercept-url pattern="/exitUser.jsp" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <intercept-url pattern="/index.jsp*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
         <intercept-url pattern="/**" access="ROLE_USER"/>
 
-        <form-login login-page="/login.jsp" authentication-failure-url="/login.jsp?login_error=1"/>
-        <http-basic/>
-        <logout logout-success-url="/login.jsp"/>
+        <form-login login-page="/login.jsp" authentication-failure-url="/login.jsp?login_error=1" default-target-url="/pfp"/>
+        <logout delete-cookies="JSESSIONID" logout-url="/j_spring_security_logout" invalidate-session="true"/>
         <remember-me/>
         <!--<custom-filter ref="switchUserProcessingFilter" position="SWITCH_USER_FILTER"/>-->
     </http>
@@ -29,6 +30,8 @@
                 <user name="admin" password="password" authorities="ROLE_USER,ROLE_ADMIN"/>
             </user-service>
         </authentication-provider>
+
     </authentication-manager>
+
 
 </b:beans>

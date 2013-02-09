@@ -1,4 +1,4 @@
-package com.sitronics.learning.pfp.persist;
+package com.sitronics.learning.pfp.servicelayer;
 
 import java.math.BigDecimal;
 import java.sql.Date;
