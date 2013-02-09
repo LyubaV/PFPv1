@@ -1,11 +1,13 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="weblayer:Web">
-    <output-path>$PROJECT_DIR$/out/artifacts/weblayer_Web</output-path>
-    <root id="archive" name="weblayer_Web.war">
-      <element id="artifact" artifact-name="weblayer:Web exploded" />
+  <artifact type="exploded-war" name="weblayer:war exploded">
+    <output-path>$PROJECT_DIR$/weblayer/target/weblayer-1.0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="weblayer/web/Web" />
       <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="weblayer" />
+        </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.1.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.1.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.1.3" />
