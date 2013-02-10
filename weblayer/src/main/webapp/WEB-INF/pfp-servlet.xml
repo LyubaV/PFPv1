@@ -3,7 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+       xmlns:utils="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 
     <context:component-scan base-package="com.sitronics.learning.pfp"/>
 
@@ -12,6 +20,47 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <mvc:annotation-driven/>
+    <bean id="localeResolver"
+          class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+        <property name="defaultLocale" value="en"/>
+    </bean>
+
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>/WEB-INF/messages</value>
+                <value>/WEB-INF/settings</value>
+            </list>
+        </property>
+        <property name="defaultEncoding" value="utf-8"/>
+
+    </bean>
+
+    <bean name="dateFormatter" class="com.sitronics.learning.pfp.servicelayer.converters.PFPDateFormatter">
+        <constructor-arg name="pattern" value="dd.MM.yyyy"/>
+    </bean>
+
+    <bean id="conversionService"
+          class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="com.sitronics.learning.pfp.servicelayer.converters.PFPDateStringConverter"/>
+            </set>
+        </property>
+        <property name="formatters">
+            <set>
+                <ref bean="dateFormatter"/>
+                <!--<value type="com.sitronics.learning.pfp.servicelayer.converters.PFPDateFormatter">dateFormatter</value>-->
+            </set>
+        </property>
+        <!--<property name="formatterRegistrars">-->
+            <!--<set>-->
+                <!--<bean class="org.springframework.format.datetime.DateFormatterRegistrar"/>-->
+            <!--</set>-->
+        <!--</property>-->
+    </bean>
+
+    <mvc:annotation-driven conversion-service="conversionService"/>
 
 </beans>
