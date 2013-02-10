@@ -10,6 +10,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="lib" />
           <element id="library" level="project" name="jstl:jstl:1.2" />
+          <element id="file-copy" path="$APPLICATION_HOME_DIR$/plugins/testng/lib/testng-jdk15.jar" />
         </element>
       </element>
     </root>

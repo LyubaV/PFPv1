@@ -1,14 +1,10 @@
 package com.sitronics.learning.pfp.servicelayer;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.math.BigDecimal;
-import java.sql.Date;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
 /**
  * Date: 10.02.13
@@ -44,6 +40,6 @@ public class TestAccountTest {
         testAccount.setId(123);
         testAccount.setDate(java.sql.Date.valueOf("2012-10-24"));
         testAccount.setAmount(new BigDecimal("100.15"));
-        Assert.assertEquals(testAccount.toString(), "TestAccount{id=1, date=2013-01-01, amount=200.2}");
+        Assert.assertEquals(testAccount.toString(), "TestAccount{id=123, date=2012-10-24, amount=100.15}");
     }
 }
