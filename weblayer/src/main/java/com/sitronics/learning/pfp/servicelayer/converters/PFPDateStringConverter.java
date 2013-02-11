@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * Date: 11.02.13
  */
-public class PFPDateStringConverter implements Converter<Date, String> {
+public class PfpDateStringConverter implements Converter<Date, String> {
     @Override
     public String convert(Date date) {
         return new SimpleDateFormat("dd.MM.yyyy HH:mm").format(date);

@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 /**
  * Date: 11.02.13
  */
-public class PFPDateFormatter implements Formatter<Date> {
+public class PfpDateFormatter implements Formatter<Date> {
     private Logger logger = Logger.getLogger(getClass().toString());
 
     private String pattern;
@@ -21,11 +21,11 @@ public class PFPDateFormatter implements Formatter<Date> {
         return pattern;
     }
 
-    public void setPattern(String pattern) {
+    public synchronized void setPattern(String pattern) {
         this.pattern = pattern;
     }
 
-    public PFPDateFormatter(String pattern) {
+    public PfpDateFormatter(String pattern) {
         this.pattern = pattern;
     }
 
