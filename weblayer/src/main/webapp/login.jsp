@@ -1,3 +1,4 @@
+<%@ page import="org.springframework.web.servlet.i18n.SessionLocaleResolver" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page pageEncoding="UTF-8" %>
@@ -16,7 +17,7 @@
     <p>username <b>admin</b>, password <b>password</b>
     <p>
 
-    <p>Locale is: <%= request.getLocale() %></p>
+    <p>Session locale is: <%= session.getAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME) %></p>
     <%-- this form-login-page form is also used as the
          form-error-page to ask for a login again.
          --%>
