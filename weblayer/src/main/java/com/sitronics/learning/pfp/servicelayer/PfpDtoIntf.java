@@ -1,7 +1,7 @@
 package com.sitronics.learning.pfp.servicelayer;
 
 import com.sitronics.learning.pfp.servicelayer.dao.PfpDaoIntf;
-import com.sitronics.learning.pfp.servicelayer.dao.PfpEntityIntf;
+import com.sitronics.learning.pfp.servicelayer.dao.PfpEntityBeanIntf;
 
 /**
  * Date: 11.02.13
@@ -9,6 +9,6 @@ import com.sitronics.learning.pfp.servicelayer.dao.PfpEntityIntf;
  */
 public interface PfpDtoIntf {
     public PfpEntityEnum getEntity();
-    public PfpEntityIntf getEntityBean();
+    public PfpEntityBeanIntf getEntityBean();
     public PfpDaoIntf getDao();
 }

@@ -1,14 +1,14 @@
 package com.sitronics.learning.pfp.servicelayer;
 
 import com.sitronics.learning.pfp.servicelayer.dao.PfpDaoIntf;
-import com.sitronics.learning.pfp.servicelayer.dao.PfpEntityIntf;
+import com.sitronics.learning.pfp.servicelayer.dao.PfpEntityBeanIntf;
 
 /**
  * Date: 12.02.13
  */
 public class PfpDto implements PfpDtoIntf {
     private PfpEntityEnum entity;
-    private PfpEntityIntf entityBean;
+    private PfpEntityBeanIntf entityBean;
     private PfpDaoIntf dao;
 
 
@@ -18,7 +18,7 @@ public class PfpDto implements PfpDtoIntf {
         dao = null;
     }
 
-    public PfpDto(PfpEntityEnum entity, PfpEntityIntf entityBean, PfpDaoIntf dao) {
+    public PfpDto(PfpEntityEnum entity, PfpEntityBeanIntf entityBean, PfpDaoIntf dao) {
         this.entity = entity;
         this.entityBean = entityBean;
         this.dao = dao;
@@ -28,7 +28,7 @@ public class PfpDto implements PfpDtoIntf {
         this.entity = entity;
     }
 
-    public void setEntityBean(PfpEntityIntf entityBean) {
+    public void setEntityBean(PfpEntityBeanIntf entityBean) {
         this.entityBean = entityBean;
     }
 
@@ -42,7 +42,7 @@ public class PfpDto implements PfpDtoIntf {
     }
 
     @Override
-    public PfpEntityIntf getEntityBean() {
+    public PfpEntityBeanIntf getEntityBean() {
         return entityBean;
     }
 
